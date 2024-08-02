@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Page Remove="Themes\Units\MaximizeButton.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Themes\Units\MaximizeButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.113" />
+  </ItemGroup>
+
+</Project>
